@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaneDeveloper</title>
+    <!-- CSS only -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/sanelogodev.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/sytle.css">
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-transaparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/textlogo2.png" height="50px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto float-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">SaneDev's blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">สมัครสมาชิก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">เข้าสู่ระบบ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navebarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
+                            FirstName
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+
+    <header class="page-header d-flex align-items-center">
+        <div class="container">
+            <h1> SaneDev's Blog</h1>
+            <h2> บทความเกี่ยวกับ เทคโนโลยีและคอมพิวเตอร์ </h2>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <section class="col-12 col-md-8">
+                <img src="assets/images/logo_bg.jpg" class="avatar" alt="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="ค้นหาบทความ... ดิจิทัล, Python, C " aria-label="ค้นหาบทความ" aria-describedby="basic-addon1">
+                    <span class="input-group-text btn-outline-info" id="basuc-addon1">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </section>
+        </div>
+        <div class="row py-5 g-3">
+
+            <section class="col-12 pb-3 text-center">
+                <h3>บทความล่าสุด</h3>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 01-Intro</h5>
+                        <p class="small">ในบทความนี้จะเป็น การเขียนโปรแกรมด้วยภาษา Python ขั้นพื้นฐาน  นะครับ จะพาเพื่อนๆไปเรียนรู้ภาษา Python ง่ายๆด้วย turtle </p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 02-Operator</h5>
+                        <p class="small"> ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ Operator ซึ่งเป็นตัวดำเนินการต่างๆ ในทางคณิตศาสตร์ นอกจากนั้นยังมีการใช้ตัวแปร การจัดการกับตัวแปร การประกาศตัวแปร และ การกำหนดค่าให้กับตัวแปร </p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 03-Functions</h5>
+                        <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ การเขียนโปรแกรมเชิงฟังก์ชัน ฟังก์ชันนี้จะช่วยให้เราพัฒนาโปรแกรมได้ง่ายขึ้น นั่นคือการแยกส่วนการทำงานต่างๆ แยกย่อยเป็นฟังก์ชันๆ ไป สรุปง่ายๆก็คือฟังก์ชันหนึ่งตัวจะมีหน้าที่เฉพาะของมันนั่นเอง </p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 04 Controls</h5>
+                        <p class="small">ในบทความนี้จะเป็น การเขียนโปรแกรมด้วยภาษา Python ในหัวข้อ การสร้างนิพจน์ทางตรรกศาสตร์ if else และ elif รวมไปถึงคำสั่งยิบย่อยต่างๆ </p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 05_List_Part01</h5>
+                        <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list หรือ รายการนะครับ</p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            
+            <section class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 h-100"> 
+                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold lh-base">Python Series 05_List_Part02</h5>
+                        <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list เช่รเดิมนะครับ จะเป็น part 2 ในวิดีโอนี้จะพาเพื่อนๆมา ตะลุยในส่วนของ คำสั่ง for loop เพื่อดำเนินการเกี่ยวกับ list นะครับ</p>
+                        <div class="mt-auto">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                               <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
+                                <div class="star-current" style="width: 90%;">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted"> 4.5 (50) </small>
+                            <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
+                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
+                                READ MORE <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>About</h6>
+                            <p>
+                                สวัสดีครับ ชื่อแล็คนะครับ (lacakkarapon) ปัจจุบันผมเป็นนักศึกษา วิทยาการคอมพิวเตอร์ <br>
+                                ที่ชื่นชอบในการเขียนโปรแกมด้วยภาษา Python ซึ่งเป็นภาษาที่ครอบจักรวาล ใช้เขียนได้หลากหลายงาน เช่น การใช้เทคนิค Web Scraping และ การทำ Machine Learning หรืองานด้าน Data Scince ครับ
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Categories</h6>
+                            <ul class="footer-links">
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Basic </a> </li>
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ดิจิทัล </a> </li>
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ภาษา C </a> </li>
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Web Scraping </a> </li>
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Machine Learning </a> </li>
+                                <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Django Framework </a> </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-links">
+                                <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev's Blog </a> </li>
+                                <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> สมัครสมาชิก </a> </li>
+                                <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> เข้าสู่ระบบ </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-8">
+                        <p>
+                            Copyright &copy; 2020 All Rights Reserved by
+                            <a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul class="social-icons text-center text-md-end">
+                            <li>
+                                <a href="https://web.facebook.com/sanedeveloper" class="facebook"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC4R_Ky2rHKbwC04ZR_BqCEw" class="youtube"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <div class="progressContainer">
+        <div class="progressBar">
+            
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let wintop = this.scrollY
+            let navbar = document.querySelector(".navbar")
+
+            let winheight = this.innerHeight
+            let docheight = document.querySelector("body").offsetHeight
+            let totalScroll = ( wintop / (docheight - winheight) ) * 100
+
+            let bar = document.querySelector(".progressBar")
+            bar.style.width = `${totalScroll}%`
+
+            // navbar-light bg-light
+            // navbar-dark bg-transaparent
+            if (wintop > 150) {
+                navbar.classList.remove("navbar-dark", "bg-transaparent")
+                navbar.classList.add("navbar-light", "bg-light")
+            }else {
+                navbar.classList.remove("navbar-light", "bg-light")
+                navbar.classList.add("navbar-dark", "bg-transaparent")
+            }
+        })
+    </script>
+
+</body>
+</html>
