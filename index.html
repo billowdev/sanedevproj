@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="Zd__Y2N8ov6sdMHpNmSXPC-YJ1tivv0lVi32MUoyS_A" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +25,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto float-end">
-                    <li class="nav-item active">
+                <ul class="navbar-nav ms-auto float-end ul-navbar">
+                    <li class="nav-item px-3 px-md-0 active">
                         <a class="nav-link" href="#">SaneDev's blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="#">สมัครสมาชิก</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เข้าสู่ระบบ</a>
+                    <li class="nav-item px-3 px-md-0">
+                        <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -40,11 +41,20 @@
                             <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
                             FirstName
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu dropdown-menu-right mb-3" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center"> 
+                                    <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
+                                    <div class="p-3 lh-sm">
+                                        <span class="fw-bold">FirstName LastName</span><br>
+                                        <small>ดูโปรไฟล์ของคุณ</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                            <li>
+                                <a class="dropdown-item" href="#">ออกจากระบบ</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -80,10 +90,10 @@
 
             <section class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow border-0 h-100"> 
-                        <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
+                        <img src="http://i3.ytimg.com/vi/_X0ZtSt6VYo/hqdefault.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bold lh-base">Python Series 01-Intro</h5>
-                        <p class="small">ในบทความนี้จะเป็น การเขียนโปรแกรมด้วยภาษา Python ขั้นพื้นฐาน  นะครับ จะพาเพื่อนๆไปเรียนรู้ภาษา Python ง่ายๆด้วย turtle </p>
+                        <h5 class="card-title fw-bold lh-base">01 วิธีการติดตั้ง Python IDLE</h5>
+                        <p class="small">การติดตั้ง IDLE ของ Python จาก python.org </p>
                         <div class="mt-auto">
                             <div class="star-rating">
                                 <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
@@ -94,9 +104,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="text-white btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>    
@@ -118,9 +130,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="text-white btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>    
@@ -142,9 +156,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="text-white btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>    
@@ -166,10 +182,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
-                        </div>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                     </div>
                 </div>    
             </section>
@@ -190,9 +207,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="text-white btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>    
@@ -214,9 +233,11 @@
                             </div>
                             <small class="text-muted"> 4.5 (50) </small>
                             <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                            <a href="#" class="text-white btn btn-info d-lg-block fw-bold mt-2">
-                                READ MORE <i class="fas fa-arrow-circle-right"></i>
-                            </a>
+                            <div class="d-grid mt-2">
+                                <a href="#" class="text-white btn btn-info fw-bold">
+                                    READ MORE <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>    
@@ -230,8 +251,8 @@
                         <div class="col-md-6">
                             <h6>About</h6>
                             <p>
-                                สวัสดีครับ ชื่อแล็คนะครับ (lacakkarapon) ปัจจุบันผมเป็นนักศึกษา วิทยาการคอมพิวเตอร์ <br>
-                                ที่ชื่นชอบในการเขียนโปรแกมด้วยภาษา Python ซึ่งเป็นภาษาที่ครอบจักรวาล ใช้เขียนได้หลากหลายงาน เช่น การใช้เทคนิค Web Scraping และ การทำ Machine Learning หรืองานด้าน Data Scince ครับ
+                                สวัสดีครับ ผมชื่อแล็คนะครับ (lacakkarapon) ปัจจุบันผมเป็นนักศึกษา วิทยาการคอมพิวเตอร์ <br>
+                                ที่ชื่นชอบในการเขียนโปรแกมด้วยภาษา Python ซึ่งเป็น universal programming language ใช้เขียนได้หลากหลายงาน เช่น การใช้เทคนิค Web Scraping และ การทำ Machine Learning หรืองานด้าน Data Scince ครับ
                             </p>
                         </div>
                         <div class="col-md-3">

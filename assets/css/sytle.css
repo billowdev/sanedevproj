@@ -65,6 +65,34 @@ html, body{
         object-fit: cover;
     }
 
+    .navbar li.dropdown{
+        background: rgba(191 220 245 / 0.30);
+        border-radius: 30px;
+        padding: 0 5px;
+    }
+
+    .navbar li.dropdown:hover{
+        background: rgba(238 2247 255 / 65%);
+    }
+
+    .navbar a:hover{
+        transform: scale(0.96)
+    }
+
+    .ul-navbar{
+        border-radius: 10px;
+    }
+
+    @media (max-width: 767px){
+        .ul-navbar{
+            background-color: #f8f9fa;
+        }
+        .ul-navbar a{
+            text-align: end;
+            color: #000 !important;
+        }
+    }
+
 
     /* Section Card */
     .card-wrapper{
