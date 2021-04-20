@@ -1,2 +1,2 @@
 # SaneDev
-# ที่อยู่ เว็บไซต์ https://sanedevsclass2.web.app/#
+# ตัวอย่างเว็บไซต์ ของโปรเจค https://sanedevsclass2.web.app/#
