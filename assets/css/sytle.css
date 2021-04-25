@@ -14,6 +14,15 @@ html, body{
     font-family: 'Kanit', sans-serif;
 }
 
+.bg{
+    background: skyblue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%);
+}
+
 
 /* Section Header */
     .page-header{
