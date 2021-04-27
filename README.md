@@ -2,4 +2,4 @@
 # https://appzstory.dev/c/sclass2-weblog-php-ajax/
 # (กำลังเรียนอยู่) 
 # Preview  (คร่าวๆ)
-# https://sanedevsclass2.web.app/#
+# https://sanedevproj.web.app/
