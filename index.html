@@ -89,10 +89,10 @@
     
                 <section class="col-12 col-md-6 col-lg-4">
                     <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/_X0ZtSt6VYo/hqdefault.jpg" class="card-img-top" alt="">
+                            <img :src="blog.image" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">01 วิธีการติดตั้ง Python IDLE</h5>
-                            <p class="small">การติดตั้ง IDLE ของ Python จาก python.org </p>
+                            <h5 class="card-title fw-bold lh-base">{{ blog.subject }}</h5>
+                            <p class="small">{{ blog.subtitle }}</p>
                             <div class="mt-auto">
                                 <div class="star-rating">
                                     <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
@@ -112,137 +112,10 @@
                         </div>
                     </div>    
                 </section>
-    
-                <section class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">Python Series 02-Operator</h5>
-                            <p class="small"> ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ Operator ซึ่งเป็นตัวดำเนินการต่างๆ ในทางคณิตศาสตร์ นอกจากนั้นยังมีการใช้ตัวแปร การจัดการกับตัวแปร การประกาศตัวแปร และ การกำหนดค่าให้กับตัวแปร </p>
-                            <div class="mt-auto">
-                                <div class="star-rating">
-                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                   <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
-                                    <div class="star-current" style="width: 90%;">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <small class="text-muted"> 4.5 (50) </small>
-                                <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                                <div class="d-grid mt-2">
-                                    <a href="blog-detail.html" class="text-white btn btn-info fw-bold">
-                                        READ MORE <i class="fas fa-arrow-circle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </section>
-    
-                <section class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">Python Series 03-Functions</h5>
-                            <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ การเขียนโปรแกรมเชิงฟังก์ชัน ฟังก์ชันนี้จะช่วยให้เราพัฒนาโปรแกรมได้ง่ายขึ้น นั่นคือการแยกส่วนการทำงานต่างๆ แยกย่อยเป็นฟังก์ชันๆ ไป สรุปง่ายๆก็คือฟังก์ชันหนึ่งตัวจะมีหน้าที่เฉพาะของมันนั่นเอง </p>
-                            <div class="mt-auto">
-                                <div class="star-rating">
-                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                   <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
-                                    <div class="star-current" style="width: 90%;">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <small class="text-muted"> 4.5 (50) </small>
-                                <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                                <div class="d-grid mt-2">
-                                    <a href="blog-detail.html" class="text-white btn btn-info fw-bold">
-                                        READ MORE <i class="fas fa-arrow-circle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </section>
-    
-                <section class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">Python Series 04 Controls</h5>
-                            <p class="small">ในบทความนี้จะเป็น การเขียนโปรแกรมด้วยภาษา Python ในหัวข้อ การสร้างนิพจน์ทางตรรกศาสตร์ if else และ elif รวมไปถึงคำสั่งยิบย่อยต่างๆ </p>
-                            <div class="mt-auto">
-                                <div class="star-rating">
-                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                   <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
-                                    <div class="star-current" style="width: 90%;">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <small class="text-muted"> 4.5 (50) </small>
-                                <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                                <div class="d-grid mt-2">
-                                    <a href="blog-detail.html" class="text-white btn btn-info fw-bold">
-                                        READ MORE <i class="fas fa-arrow-circle-right"></i>
-                                    </a>
-                                </div>
-                        </div>
-                    </div>    
-                </section>
-    
-                <section class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">Python Series 05_List_Part01</h5>
-                            <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list หรือ รายการนะครับ</p>
-                            <div class="mt-auto">
-                                <div class="star-rating">
-                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                   <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
-                                    <div class="star-current" style="width: 90%;">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <small class="text-muted"> 4.5 (50) </small>
-                                <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                                <div class="d-grid mt-2">
-                                    <a href="blog-detail.html" class="text-white btn btn-info fw-bold">
-                                        READ MORE <i class="fas fa-arrow-circle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </section>
-                
-                <section class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow border-0 h-100"> 
-                            <img src="http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold lh-base">Python Series 05_List_Part02</h5>
-                            <p class="small">ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list เช่รเดิมนะครับ จะเป็น part 2 ในวิดีโอนี้จะพาเพื่อนๆมา ตะลุยในส่วนของ คำสั่ง for loop เพื่อดำเนินการเกี่ยวกับ list นะครับ</p>
-                            <div class="mt-auto">
-                                <div class="star-rating">
-                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                   <!-- (จำนวนคะแนน / 5 ดาว) * 100 = x% -->
-                                    <div class="star-current" style="width: 90%;">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <small class="text-muted"> 4.5 (50) </small>
-                                <small class="float-end"> <i class="far fa-eye"></i> 1,100 </small>
-                                <div class="d-grid mt-2">
-                                    <a href="blog-detail.html" class="text-white btn btn-info fw-bold">
-                                        READ MORE <i class="fas fa-arrow-circle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </section>
+
             </div>
         </section>
+        
     
         <footer class="site-footer">
                     <div class="container">
@@ -315,7 +188,12 @@
             data () {
                 return {
                     subject: "SaneDev's Blog",
-                    title: "บทความเกี่ยวกับ เทคโนโลยีและคอมพิวเตอร์"
+                    title: "บทความเกี่ยวกับ เทคโนโลยีและคอมพิวเตอร์",
+                    blog: {
+                        subject: "01 วิธีการติดตั้ง Python IDLE",
+                        subtitle: "การติดตั้ง IDLE ของ Python จาก python.org",
+                        image: "http://i3.ytimg.com/vi/_X0ZtSt6VYo/hqdefault.jpg"
+                    }
 
                 }
             }
