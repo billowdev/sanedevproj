@@ -7,8 +7,6 @@
     Section Star
     Section Footer
     Section ProgressBar 
-    Section Profile 
-    Section Profile List
 */
 
 /* Section Global */
@@ -46,26 +44,17 @@ html, body{
 
     }
 
-    /* Section Profile */
     .profile-page{
-        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(135,206,235, 1) 100%)  !important;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(135,206,235, 1) 100%);
     }
 
     .profile-page .cover{
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.33) 0px 0px 10px;
         height: 450px;
         width: 100%;
         object-fit: cover;
         object-position: center;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
-    }
-
-    @media (max-width: 991px) {
-        .profile-page .cover{
-            height: 350px;
-        }
     }
 
 
@@ -257,19 +246,3 @@ html, body{
         -o-transition: width .6s case;
         transition: width .6s case;
     }
-
-    /* Section Profile List */
-
-   .list-profile .list-group-item{
-        padding: 20px 10px;
-        font-size: 18px;
-        border: 0;
-        letter-spacing: 2px;
-   }
-
-   .list-profile .list-group-item.active{
-        color: #171717;
-        background-color: #ffffff;
-        font-weight: 600;
-        border-bottom: 2px solid #99c1ff !important;
-   }
