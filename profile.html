@@ -74,12 +74,13 @@
           <hr class="w-75 mx-auto">
       </section>
 
-      <section class="container">
+      <!-- ข้อมูลส่วนตัว -->
+      <section class="container mb-5">
           <div class="row justify-content-center">
               <div class="col-12 col-lg-11">
                     <div class="row">
                         <div class="col-lg-3">
-                            <div class="list-group list-profile">
+                            <div class="list-group list-profile sticky-top">
                                 <a href="profile.html" class="list-group-item list-group-item-action active">
                                     <i class="far fa-user"></i> ข้อมูลส่วนตัว
                                 </a>
@@ -91,11 +92,114 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-9"></div>
+                        <div class="col-lg-9">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <form class="row gy-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="firstname">ชื่อ</label>
+                                            <input type="text" class="form-control" id="firstname" placeholder="ชื่อจริง" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="lastname">นามสกุล</label>
+                                            <input type="text" class="form-control" id="lastname" placeholder="นามสกุล" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="introduce">แนะนำตัวเอง</label>
+                                            <input type="text" class="form-control" id="introduce" placeholder="แนะนำตัวเอง" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="email">อีเมล</label>
+                                            <p>exsample@domain.com</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="phone">เบอร์โทรศัพท์</label>
+                                            <input type="text" class="form-control" id="phone" placeholder="เบอร์โทรศัพท์" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="address">ที่อยู่</label>
+                                            <input type="text" class="form-control" id="address" placeholder="บ้านเลขที่ คอนโด อพาทเม้นท์ อื่นๆ" required>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="district">ตำบล</label>
+                                            <input type="text" class="form-control" id="district" placeholder="ตำบล" required>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="amphoe">อำเภอ</label>
+                                            <input type="text" class="form-control" id="amphoe" placeholder="อำเภอ" required>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="province">จังหวัด</label>
+                                            <input type="text" class="form-control" id="province" placeholder="จังหวัด" required>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="zipcode">ไปรษณีย์</label>
+                                            <input type="text" class="form-control" id="zipcode" placeholder="ไปรษณีย์" required>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
               </div>
           </div>
       </section>
+
+       <!-- footer -->
+      <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>About</h6>
+                    <p>
+                        สวัสดีครับ ผมชื่อแล็คนะครับ (lacakkarapon) ปัจจุบันผมเป็นนักศึกษา วิทยาการคอมพิวเตอร์ <br>
+                        ที่ชื่นชอบในการเขียนโปรแกมด้วยภาษา Python ซึ่งเป็น universal programming language ใช้เขียนได้หลากหลายงาน เช่น การใช้เทคนิค Web Scraping และ การทำ Machine Learning หรืองานด้าน Data Scince ครับ
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Basic </a> </li>
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ดิจิทัล </a> </li>
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ภาษา C </a> </li>
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Web Scraping </a> </li>
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Machine Learning </a> </li>
+                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Django Framework </a> </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev's Blog </a> </li>
+                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> สมัครสมาชิก </a> </li>
+                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> เข้าสู่ระบบ </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-12 col-md-8">
+                <p>
+                    Copyright &copy; 2020 All Rights Reserved by
+                    <a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev </a>
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="social-icons text-center text-md-end">
+                    <li>
+                        <a href="https://web.facebook.com/sanedeveloper" class="facebook"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC4R_Ky2rHKbwC04ZR_BqCEw" class="youtube"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
      <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
