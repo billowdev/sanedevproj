@@ -154,6 +154,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/http-vue-loader/src/httpVueLoader.js"></script>
     
     <script type="text/x-template" id="blog-template">
             <section class="col-12 col-md-6 col-lg-4">
@@ -184,13 +185,16 @@
     </script>
     
     <script>
-        Vue.component("blog-component", {
-            template: "#blog-template",
-            props: ["blog"]
-        })
+        // Vue.component("blog-component", {
+        //     template: "#blog-template",
+        //     props: ["blog"]
+        // })
 
         new Vue({
             el: "#app",
+            components: {
+                'blog-component': httpVueLoader('./components/blog.vue')
+            },
             data () {
                 return {
                     subject: "SaneDev's Blog",
