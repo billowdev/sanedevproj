@@ -1,0 +1,26 @@
+{
+  "name": "SaneDev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacakkarapon/SaneDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lacakkarapon/SaneDev/issues"
+  },
+  "homepage": "https://github.com/lacakkarapon/SaneDev#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0-beta3",
+    "http-vue-loader": "^1.4.2",
+    "vue": "^2.6.13"
+  }
+}
