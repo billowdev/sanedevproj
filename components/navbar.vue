@@ -43,13 +43,46 @@
                     </ul>
                 </div>
             </div>
+              
+            <div class="progressContainer">
+                 <div class="progressBar"></div>
+            </div>
+
           </nav>
 </template>
  
 <script>
 module.exports = {
-    
+    mounted() {
+         window.addEventListener('scroll', function(){
+            let wintop = this.scrollY
+            let navbar = document.querySelector(".navbar")
+
+            let winheight = this.innerHeight
+            let docheight = document.querySelector("body").offsetHeight
+            let totalScroll = ( wintop / (docheight - winheight) ) * 100
+
+            let bar = document.querySelector(".progressBar")
+            bar.style.width = `${totalScroll}%`
+
+            // navbar-light bg-light
+            // navbar-dark bg-transaparent
+            if (wintop > 150) {
+                navbar.classList.remove("navbar-dark", "bg-transaparent")
+                navbar.classList.add("navbar-light", "bg-light")
+            }else {
+                navbar.classList.remove("navbar-light", "bg-light")
+                navbar.classList.add("navbar-dark", "bg-transaparent")
+            }
+        })
+    }
 }
+
+/**
+ * mounted() ในเหตุการณ์นี้ จะเกิดขึ้นเมื่อ DOM ถูกสร้างเสร็จแล้ว เราสามารถเข้าถึง Element ต่างๆ ใน DOM ได้ทั้งหมด
+ */
+
+
 </script>
  
 <style scoped>
