@@ -19,8 +19,10 @@
   "homepage": "https://github.com/lacakkarapon/SaneDev#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
     "http-vue-loader": "^1.4.2",
     "vue": "^2.6.13"
-  }
+  },
+  "devDependencies": {}
 }
