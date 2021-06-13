@@ -52,10 +52,10 @@
     </div>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/vue/dist/vue.min.js"></script>
     <script src="node_modules/http-vue-loader/src/httpVueLoader.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         new Vue({
@@ -73,15 +73,20 @@
                 }
             },
             mounted() {
-                var vm = this
-                axios({
-                    method: 'GET',
-                    url: 'blog.json'
-                }).then(function(resp) {
-                    vm.blogs = resp.data.response
-                }).catch((err) => {
-                    console.log(err)
-                })
+                this.getBlogs()
+            },
+            methods: {
+                getBlogs() {
+                    var vm = this
+                    axios({
+                        method: 'GET',
+                        url: 'blog.json'
+                    }).then(function(resp) {
+                        vm.blogs = resp.data.response
+                    }).catch((err) => {
+                        console.log(err)
+                    })
+                    }
             }
         })
     </script>

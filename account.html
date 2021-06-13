@@ -8,76 +8,40 @@
        <!-- CSS only -->
        <link rel="shortcut icon" type="image/x-icon" href="assets/images/sanelogodev.png">
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" >
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
-       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
        <link rel="stylesheet" href="assets/css/sytle.css">
 
 </head>
 <body>
-       
-    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="./">
-                <img src="assets/images/textlogo2.png" height="50px" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto float-end ul-navbar">
-                    <li class="nav-item px-3 px-md-0 active">
-                        <a class="nav-link" href="./">SaneDev's blog</a>
+    <div id="app">
+        
+        <navbar-component></navbar-component>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navebarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                            <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
-                            FirstName
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right mb-3" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="profile.html">
-                                <div class="d-flex align-items-center"> 
-                                    <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
-                                    <div class="p-3 lh-sm">
-                                        <span class="fw-bold">FirstName LastName</span><br>
-                                        <small>ดูโปรไฟล์ของคุณ</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                            <li>
-                                <a class="dropdown-item" href="#">ออกจากระบบ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
-
-      <!-- Profile Header -->
-      <section class="profile-page d-flex align-items-center">
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-12 col-lg-11">
-                      <img class="cover" src="assets/images/uploads/image_cover.jpg" class="img-fluid" alt="cover">
-                  </div>
-                  <div class="col-12 cool-lg-11">
+        <!-- Profile Header -->
+        <section class="profile-page d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-11">
+                        <img class="cover" src="assets/images/uploads/image_cover.jpg" class="img-fluid" alt="cover">
+                    </div>
+                    <div class="col-12 cool-lg-11">
                     <img class="avatar" src="assets/images/uploads/avatar.png" class="img-fluid avatar" alt="avatar">
-                  </div>
-              </div>
-          </div>
-      </section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section class="container text-center">
-          <h1 class="fw-bold">ชื่อจริง นามสกุล</h1>
-          <p class="text-mute">คำแนะนำตัวเองสั้นๆ</p>
-          <hr class="w-75 mx-auto">
-      </section>
+        <section class="container text-center">
+            <h1 class="fw-bold">ชื่อจริง นามสกุล</h1>
+            <p class="text-mute">คำแนะนำตัวเองสั้นๆ</p>
+            <hr class="w-75 mx-auto">
+        </section>
 
-      <!-- ข้อมูลส่วนตัว -->
-      <section class="container mb-5">
-          <div class="row justify-content-center">
-              <div class="col-12 col-lg-11">
+        <!-- ข้อมูลส่วนตัว -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="list-group list-profile sticky-top">
@@ -116,67 +80,29 @@
                             </div>
                         </div>
                     </div>
-              </div>
-          </div>
-      </section>
+                </div>
+            </div>
+        </section>
 
-       <!-- footer -->
-      <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>About</h6>
-                    <p>
-                        สวัสดีครับ ผมชื่อแล็คนะครับ (lacakkarapon) ปัจจุบันผมเป็นนักศึกษา วิทยาการคอมพิวเตอร์ <br>
-                        ที่ชื่นชอบในการเขียนโปรแกมด้วยภาษา Python ซึ่งเป็น universal programming language ใช้เขียนได้หลากหลายงาน เช่น การใช้เทคนิค Web Scraping และ การทำ Machine Learning หรืองานด้าน Data Scince ครับ
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Basic </a> </li>
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ดิจิทัล </a> </li>
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> ภาษา C </a> </li>
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Python Web Scraping </a> </li>
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Machine Learning </a> </li>
-                        <li><a href="https://youtu.be/SxwHACP5jcs" target="_blank"> Django Framework </a> </li>
+        <footer-component></footer-component>
 
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev's Blog </a> </li>
-                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> สมัครสมาชิก </a> </li>
-                        <li><a href="https://web.facebook.com/sanedeveloper" target="_blank"> เข้าสู่ระบบ </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-    <div class="container">
-        <div class="row text-center text-md-start">
-            <div class="col-12 col-md-8">
-                <p>
-                    Copyright &copy; 2020 All Rights Reserved by
-                    <a href="https://web.facebook.com/sanedeveloper" target="_blank"> SaneDev </a>
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <ul class="social-icons text-center text-md-end">
-                    <li>
-                        <a href="https://web.facebook.com/sanedeveloper" class="facebook"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC4R_Ky2rHKbwC04ZR_BqCEw" class="youtube"><i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-</footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <script src="node_modules/http-vue-loader/src/httpVueLoader.js"></script>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-     <!-- JavaScript Bundle with Popper -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    new Vue({
+        el: "#app",
+        components: {
+            'navbar-component': httpVueLoader('./components/navbar.vue'),
+            'footer-component': httpVueLoader('./components/footer.vue')
+        }
+    })
+    </script>
+
 </body>
 </html>
