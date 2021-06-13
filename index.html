@@ -73,11 +73,14 @@
                 }
             },
             mounted() {
+                var vm = this
                 axios({
                     method: 'GET',
                     url: 'blog.json'
                 }).then(function(resp) {
-                    console.log(resp)
+                    vm.blogs = resp.data.response
+                }).catch((err) => {
+                    console.log(err)
                 })
             }
         })
