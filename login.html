@@ -23,7 +23,7 @@
                         <img src="assets/images/textlogo2.png" class="img-fluid d-block mx-auto" alt="logo">
                     </div>
                     <div class="card-body">
-                        <form v-on:submit.prevent="submitLogin">
+                        <form @submit.prevent @submit.prevent.once="submitLogin">
                             <div class="row mb-3">
                                 <label for="username" class="col-sm-3" col-form-label>ชื่อผู้ใช้งาน</label>
                                 <div class="col-sm-9">
@@ -69,7 +69,10 @@
             },
             methods: {
                 submitLogin() {
-                    console.log(this.auth)
+                    alert(this.auth.username + 'เข้าสู่ระบบสำเร็จ')
+                    localStorage.setItem('auth_token', 'miwoefnsieodfhyioqwuehiaosdc')
+                    localStorage.setItem('auth_data', this.auth.username)
+                    location.assign('./')
                 }
             }
 
