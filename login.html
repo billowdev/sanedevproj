@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="bg"> </div>
-    <div class="container">
+    <div class="container" id="app">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6">
                 <div class="card py-3 p-lg-5 shadow">
@@ -23,17 +23,17 @@
                         <img src="assets/images/textlogo2.png" class="img-fluid d-block mx-auto" alt="logo">
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form v-on:submit.prevent="submitLogin">
                             <div class="row mb-3">
                                 <label for="username" class="col-sm-3" col-form-label>ชื่อผู้ใช้งาน</label>
                                 <div class="col-sm-9">
-                                    <input type="text" id="username" class="form-control" placeholder="Username">
+                                    <input type="text" id="username" v-model="auth.username" class="form-control" placeholder="Username">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="password" class="col-sm-3" col-form-label>รหัสผ่าน</label>
                                 <div class="col-sm-9">
-                                    <input type="text" id="password" class="form-control" placeholder="Password">
+                                    <input type="password" id="password" v-model="auth.password" class="form-control" placeholder="Password">
                                 </div>
                             </div>
                             <div class="d-grid mb-3">
@@ -52,10 +52,29 @@
 
 
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="node_modules/vue/dist/vue.min.js"></script>
-        <script src="node_modules/axios/dist/axios.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data() {
+                return {
+                    auth: {
+                        username: null,
+                        password: null
+                    }
+                }
+            },
+            methods: {
+                submitLogin() {
+                    console.log(this.auth)
+                }
+            }
+
+        })
+    </script>
+
 </body>
 </html>
