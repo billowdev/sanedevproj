@@ -12,10 +12,10 @@
                         <li class="nav-item px-3 px-md-0 active">
                             <a class="nav-link" href="./">SaneDev's blog</a>
                         </li>
-                        <li class="nav-item px-3 px-md-0">
-                            <a class="nav-link" href="register.html">สมัครสมาชิก</a>
+                        <li class="nav-item px-3 px-md-0" v-if="!auth.data">
+                            <a class="nav-link" href="register.html" >สมัครสมาชิก</a>
                         </li>
-                        <li class="nav-item px-3 px-md-0">
+                        <li class="nav-item px-3 px-md-0" v-if="!auth.data">
                             <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
                         </li>
     
@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                                    <a class="dropdown-item" href="" @click="logout">ออกจากระบบ</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -53,6 +53,7 @@
  
 <script>
 module.exports = {
+    props: ['auth'],
     mounted() {
          window.addEventListener('scroll', function(){
             let wintop = this.scrollY
@@ -75,6 +76,12 @@ module.exports = {
                 navbar.classList.add("navbar-dark", "bg-transaparent")
             }
         })
+    },
+    methods: {
+        logout() {
+            localStorage.clear()
+            location.assign('./')
+        }
     }
 }
 

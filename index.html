@@ -16,7 +16,7 @@
 <body>
     <div id="app">
 
-        <navbar-component></navbar-component>
+        <navbar-component :auth="auth"></navbar-component>
 
         <header class="page-header d-flex align-items-center">
             <div class="container">
@@ -58,6 +58,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        const AUTH_DATA = localStorage.getItem('auth_data')
+        const AUTH_TOKEN = localStorage.getItem('auth_token')
+
         new Vue({
             el: "#app",
             components: {
@@ -69,7 +72,11 @@
                 return {
                     subject: "SaneDev's Blog",
                     title: "บทความเกี่ยวกับ เทคโนโลยีและคอมพิวเตอร์",
-                    blogs: null
+                    blogs: null,
+                    auth: {
+                        token: AUTH_TOKEN,
+                        data: AUTH_DATA
+                    }
                 }
             },
             mounted() {
