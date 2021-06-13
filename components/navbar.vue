@@ -19,7 +19,7 @@
                             <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
                         </li>
     
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" v-if="auth.data">
                             <a class="nav-link dropdown-toggle" href="#" id="navebarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                                 <img class="profile-img" src="assets/images/uploads/avatar.png" width="40px" height="40px" alt="avatar">
                                 FirstName

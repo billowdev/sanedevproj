@@ -18,7 +18,7 @@
 
     <div id="app">
 
-        <navbar-component></navbar-component>
+        <navbar-component :auth="auth"></navbar-component>
 
         <section class="container my-5">
             <div class="row justify-content-center">
@@ -55,13 +55,23 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    new Vue({
-        el: "#app",
-        components: {
-            'navbar-component': httpVueLoader('./components/navbar.vue'),
-            'footer-component': httpVueLoader('./components/footer.vue')
-        }
-    })
+        const AUTH_DATA = localStorage.getItem('auth_data')
+        const AUTH_TOKEN = localStorage.getItem('auth_token')
+        new Vue({
+            el: "#app",
+            components: {
+                'navbar-component': httpVueLoader('./components/navbar.vue'),
+                'footer-component': httpVueLoader('./components/footer.vue')
+            },
+            data () {
+                return {
+                    auth: {
+                        token: AUTH_TOKEN,
+                        data: AUTH_DATA
+                    }
+                }
+            },
+        })
     </script>
 
 
