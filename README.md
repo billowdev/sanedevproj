@@ -3,6 +3,5 @@
 #### https://appzstory.dev/c/sclass2-weblog-php-ajax/
 ### Preview
 #### https://sanedevproj.web.app/
-<hr>
 
 <a href="https://sanedevproj.web.app/"><img src="https://sv1.picz.in.th/images/2021/06/22/sxSQ8n.png" alt="sxSQ8n.png" border="0" /></a>
