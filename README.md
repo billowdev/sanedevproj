@@ -4,4 +4,4 @@
 ### Preview
 #### https://sanedevproj.web.app/
 
-<a href="https://sanedevproj.web.app/"><img src="/lacakp/SaneDev/blob/main/web.png?raw=true" alt="web.png" border="0" /></a>
+![alt text](https://github.com/lacakp/SaneDev/blob/main/web.png?raw=true)
