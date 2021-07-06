@@ -14,4 +14,4 @@
 
 -------------------------------------
 
-##### All content in this archive is for educational purposes. I respect the origin of all content. and/or if there is a copyright infringement Please contact me and I will gladly remove everything in this document. If there is any copyright infringement and/or offends anyone... Lacakp.
+##### All content in this repository is for educational purposes. I respect the origin of all content. and/or if there is a copyright infringement Please contact me and I will gladly remove everything in this repository. If there is any copyright infringement and/or offends anyone... Lacakp.
