@@ -9,3 +9,9 @@
 ![alt text](https://github.com/lacakp/SaneDev/blob/main/Images/web03.jpeg?raw=true)
 ![alt text](https://github.com/lacakp/SaneDev/blob/main/Images/web04.jpeg?raw=true)
 ![alt text](https://github.com/lacakp/SaneDev/blob/main/Images/web05.jpeg?raw=true)
+
+
+
+-------------------------------------
+
+##### All content in this archive is for educational purposes. I respect the origin of all content. and/or if there is a copyright infringement Please contact me and I will gladly remove everything in this document. If there is any copyright infringement and/or offends anyone... Lacakp.
